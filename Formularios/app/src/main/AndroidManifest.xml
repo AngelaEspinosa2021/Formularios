@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.formularios">
+    package="com.example.formularios" >
 
     <application
         android:allowBackup="true"
@@ -8,10 +8,25 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Formularios">
+        android:theme="@style/Theme.Formularios" >
+        <activity
+            android:name=".DetalleVehiculo"
+            android:exported="false" />
+        <activity
+            android:name=".DetalleProducto"
+            android:exported="false" />
+        <activity
+            android:name=".FormularioVehiculos"
+            android:exported="false" />
+        <activity
+            android:name=".DetallePersona"
+            android:exported="false" />
+        <activity
+            android:name=".FormularioPersonas"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
