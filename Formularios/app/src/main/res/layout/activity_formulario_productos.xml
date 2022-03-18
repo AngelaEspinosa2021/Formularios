@@ -4,6 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#09A193"
     tools:context=".FormularioProductos">
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardFormularioProductos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="141dp"
+        app:cardBackgroundColor="#55FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/TituloProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PRODUCTO"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
