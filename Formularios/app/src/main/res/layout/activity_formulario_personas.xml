@@ -8,7 +8,7 @@
     tools:context=".FormularioPersonas">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="60dp"
@@ -46,408 +46,402 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="15dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="26dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="50dp"
-                android:layout_marginRight="10dp"
+            <TextView
+                android:id="@+id/NombrePersona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:width="2dp"
+                android:text="Nombres"
+                android:textAlignment="textStart"
+                android:textColor="#474242"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/NombrePersona"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:width="2dp"
-                    android:text="Nombres"
-                    android:textAlignment="textStart"
-                    android:textColor="#474242"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/TxtNombrePersona"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:width="200dp"
-                    android:background="@color/white"
-                    android:ems="10"
-                    android:inputType="textPersonName" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="26dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/ApellidosPersona"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:width="2dp"
-                    android:text="Apellidos"
-                    android:textColor="#474242"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/TxtApellidoPersona"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:width="200dp"
-                    android:background="@color/white"
-                    android:ems="10"
-                    android:inputType="textPersonName" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
+            <EditText
+                android:id="@+id/TxtNombrePersona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:width="200dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:inputType="textPersonName" />
 
-                <TextView
-                    android:id="@+id/TipoDocumento"
-                    android:layout_width="147dp"
-                    android:layout_height="wrap_content"
-                    android:text="Tipo de Documento"
-                    android:textColor="#474242"
-                    android:textStyle="bold" />
+        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/NumeroDocumentoPersona"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:text="Numero"
-                    android:textColor="#474242"
-                    android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
 
-            </LinearLayout>
+            <TextView
+                android:id="@+id/ApellidosPersona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="2dp"
+                android:text="Apellidos"
+                android:textColor="#474242"
+                android:textStyle="bold" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+            <EditText
+                android:id="@+id/TxtApellidoPersona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="200dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Genero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Género"
+                android:textAlignment="center"
+                android:textColor="#474242"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="F"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:id="@+id/M"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="M"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:id="@+id/OTRO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="OTRO"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/TxtOtroGenero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:width="80dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="¿Cuál?"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TipoDocumento"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:text="Tipo de Documento"
+                android:textColor="#474242"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/NumeroDocumentoPersona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Numero"
+                android:textColor="#474242"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/CC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="0"
-                android:orientation="horizontal">
+                android:text="CC"
+                android:textSize="12sp" />
 
-                <RadioButton
-                    android:id="@+id/CC"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0"
-                    android:text="CC"
-                    android:textSize="12sp" />
+            <RadioButton
+                android:id="@+id/CE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="CE"
+                android:textSize="12sp" />
 
-                <RadioButton
-                    android:id="@+id/CE"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0"
-                    android:text="CE"
-                    android:textSize="12sp" />
+            <RadioButton
+                android:id="@+id/PA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="PA"
+                android:textSize="12sp" />
 
-                <RadioButton
-                    android:id="@+id/PA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0"
-                    android:text="PA"
-                    android:textSize="12sp" />
-
-                <EditText
-                    android:id="@+id/TxtNumeroDocumento"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_weight="1"
-                    android:background="@color/white"
-                    android:ems="10"
-                    android:inputType="textPersonName" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+            <EditText
+                android:id="@+id/TxtNumeroDocumento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:background="@color/white"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/Genero"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Género"
-                    android:textAlignment="center"
-                    android:textColor="#474242"
-                    android:textStyle="bold" />
-            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+            <TextView
+                android:id="@+id/PaisPersona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:height="20dp"
+                android:text="Pais de Residencia"
+                android:textColor="#474242"
+                android:textStyle="bold" />
 
-                <CheckBox
-                    android:id="@+id/F"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="F"
-                    android:textSize="12sp" />
-
-                <CheckBox
-                    android:id="@+id/M"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="M"
-                    android:textSize="12sp" />
-
-                <CheckBox
-                    android:id="@+id/OTRO"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="OTRO"
-                    android:textSize="12sp" />
-
-                <EditText
-                    android:id="@+id/TxtOtroGenero"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_weight="1"
-                    android:width="80dp"
-                    android:background="@color/white"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="¿Cuál?"
-                    android:textSize="18sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+            <EditText
+                android:id="@+id/TxtPaisPersona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:width="180dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/PaisPersona"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:height="20dp"
-                    android:text="Pais de Residencia"
-                    android:textColor="#474242"
-                    android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/TxtPaisPersona"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:width="180dp"
-                    android:background="@color/white"
-                    android:ems="10"
-                    android:inputType="textPersonName" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
+            <TextView
+                android:id="@+id/DptoPersona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:height="20dp"
+                android:text="Departamento"
+                android:textColor="#474242"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/DptoPersona"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:height="20dp"
-                    android:text="Departamento"
-                    android:textColor="#474242"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/TxtDptoPersona"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:width="80dp"
-                    android:background="@color/white"
-                    android:ems="10"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/CiudadPersona"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_weight="1"
-                    android:height="20dp"
-                    android:text="Ciudad"
-                    android:textColor="#474242"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/TxtCiudadPersona"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:width="80dp"
-                    android:background="@color/white"
-                    android:ems="10"
-                    android:inputType="textPersonName" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
+            <EditText
+                android:id="@+id/TxtDptoPersona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:width="80dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:inputType="textPersonName" />
 
-                <TextView
-                    android:id="@+id/EmailPersona"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:height="20dp"
-                    android:text="Email"
-                    android:textColor="#474242"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/TxtEmailPersona"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:width="270dp"
-                    android:background="@color/white"
-                    android:ems="10"
-                    android:inputType="textPersonName" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
+            <TextView
+                android:id="@+id/CiudadPersona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:height="20dp"
+                android:text="Ciudad"
+                android:textColor="#474242"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/DireccionPersona"
-                    android:layout_width="144dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:height="20dp"
-                    android:text="Dirección Residencia"
-                    android:textColor="#474242"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/TxtDireccionPersona"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:width="180dp"
-                    android:height="20dp"
-                    android:background="@color/white"
-                    android:ems="10"
-                    android:inputType="textPersonName" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
+            <EditText
+                android:id="@+id/TxtCiudadPersona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:width="80dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:inputType="textPersonName" />
 
-                <TextView
-                    android:id="@+id/TelefonoPersona"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:height="20dp"
-                    android:text="Teléfono Contacto"
-                    android:textColor="#474242"
-                    android:textStyle="bold" />
+        </LinearLayout>
 
-                <EditText
-                    android:id="@+id/TxtTelefonoPersona"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:width="180dp"
-                    android:background="@color/white"
-                    android:ems="10"
-                    android:inputType="textPersonName" />
-            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="310dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+            <TextView
+                android:id="@+id/DireccionPersona"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:height="20dp"
+                android:text="Dirección Residencia"
+                android:textColor="#474242"
+                android:textStyle="bold" />
 
-                <Button
-                    android:id="@+id/BtnRegistrarPersona"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="110dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginRight="110dp"
-                    android:layout_marginBottom="30dp"
-                    android:layout_weight="1"
-                    android:background="@color/gray"
-                    android:backgroundTint="@color/gray"
-                    android:shadowColor="@color/gray"
-                    android:text="REGISTRAR"
-                    android:textColor="#FFFFFF"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:visibility="visible"
-                    app:cornerRadius="10dp" />
-            </LinearLayout>
+            <EditText
+                android:id="@+id/TxtDireccionPersona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="180dp"
+                android:height="20dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/EmailPersona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:height="20dp"
+                android:text="Email"
+                android:textColor="#474242"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/TxtEmailPersona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="270dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="370dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TelefonoPersona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:height="20dp"
+                android:text="Teléfono Contacto"
+                android:textColor="#474242"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/TxtTelefonoPersona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="180dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/BtnRegistrarPersona"
+                style="@android:style/Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="110dp"
+                android:layout_marginBottom="30dp"
+                android:layout_weight="1"
+                android:background="@color/gray"
+                android:text="REGISTRAR"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:cornerRadius="10dp" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
