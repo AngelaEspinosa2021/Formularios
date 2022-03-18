@@ -340,10 +340,12 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/BtnSalirDetallePersona"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="SALIR"
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
