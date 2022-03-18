@@ -52,7 +52,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/NombresPersona"
+                    android:id="@+id/NombrePersona"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -235,6 +235,84 @@
                     android:text="¿Cuál?"
                     android:textSize="18sp" />
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/PaisPersona"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pais de Residencia"
+                    android:textColor="#474242"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/TxtPaisPersona"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/DptoPersona"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Departamento"
+                    android:textColor="#474242"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/TxtDptoPersona"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="100dp"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/CiudadPersona"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Ciudad"
+                    android:textColor="#474242"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/TxtCiudadPersona"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="100dp"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
