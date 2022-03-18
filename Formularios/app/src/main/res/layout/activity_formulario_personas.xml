@@ -63,7 +63,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName2"
+                    android:id="@+id/TxtNombrePersona"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -92,7 +92,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName3"
+                    android:id="@+id/TxtApellidoPersona"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -120,14 +120,15 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/NumeroDocumento"
+                    android:id="@+id/NumeroDocumentoPersona"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:layout_weight="1"
-                    android:text="Numero"
+                    android:layout_weight="50dp"
+                    android:text="Número"
                     android:textColor="#474242"
                     android:textStyle="bold" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -163,7 +164,7 @@
                     android:textSize="12sp" />
 
                 <EditText
-                    android:id="@+id/NumeroDocumento"
+                    android:id="@+id/TxtNumeroDocumento"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -224,7 +225,7 @@
                     android:textSize="10sp" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName5"
+                    android:id="@+id/TxtOtroGenero"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -311,6 +312,92 @@
                     android:ems="10"
                     android:inputType="textPersonName" />
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/EmailPersona"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Email"
+                    android:textColor="#474242"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/TxtEmailPersona"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/DireccionPersona"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50dp"
+                    android:text="Dirección Residencia"
+                    android:textColor="#474242"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/TxtDireccionPersona"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:height="20dp"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TelefonoPersona"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Teléfono de Contacto"
+                    android:textColor="#474242"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/TxtTelefonoPersona"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
             </LinearLayout>
 
         </LinearLayout>
