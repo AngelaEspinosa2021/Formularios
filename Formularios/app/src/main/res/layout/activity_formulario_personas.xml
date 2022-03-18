@@ -8,19 +8,27 @@
     tools:context=".FormularioPersonas">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="141dp"
         android:layout_weight="1"
         android:textAlignment="center"
         app:cardBackgroundColor="#55FFFFFF"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="87dp">
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
             android:orientation="vertical">
 
             <TextView
@@ -39,6 +47,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -67,7 +78,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:width="150dp"
+                    android:width="200dp"
                     android:background="@color/white"
                     android:ems="10"
                     android:inputType="textPersonName" />
@@ -87,6 +98,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:width="2dp"
                     android:text="Apellidos"
                     android:textColor="#474242"
                     android:textStyle="bold" />
@@ -96,6 +108,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:width="200dp"
                     android:background="@color/white"
                     android:ems="10"
                     android:inputType="textPersonName" />
@@ -114,7 +127,6 @@
                     android:id="@+id/TipoDocumento"
                     android:layout_width="147dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="50dp"
                     android:text="Tipo de Documento"
                     android:textColor="#474242"
                     android:textStyle="bold" />
@@ -124,8 +136,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:layout_weight="50dp"
-                    android:text="Número"
+                    android:text="Numero"
                     android:textColor="#474242"
                     android:textStyle="bold" />
 
@@ -143,7 +154,7 @@
                     android:id="@+id/CC"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="0"
                     android:text="CC"
                     android:textSize="12sp" />
 
@@ -151,7 +162,7 @@
                     android:id="@+id/CE"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="0"
                     android:text="CE"
                     android:textSize="12sp" />
 
@@ -159,7 +170,7 @@
                     android:id="@+id/PA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="0"
                     android:text="PA"
                     android:textSize="12sp" />
 
@@ -188,6 +199,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Género"
+                    android:textAlignment="center"
                     android:textColor="#474242"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -222,7 +234,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="OTRO"
-                    android:textSize="10sp" />
+                    android:textSize="12sp" />
 
                 <EditText
                     android:id="@+id/TxtOtroGenero"
@@ -230,6 +242,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_weight="1"
+                    android:width="80dp"
                     android:background="@color/white"
                     android:ems="10"
                     android:inputType="textPersonName"
@@ -250,6 +263,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:height="20dp"
                     android:text="Pais de Residencia"
                     android:textColor="#474242"
                     android:textStyle="bold" />
@@ -259,6 +273,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:width="180dp"
                     android:background="@color/white"
                     android:ems="10"
                     android:inputType="textPersonName" />
@@ -278,6 +293,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:height="20dp"
                     android:text="Departamento"
                     android:textColor="#474242"
                     android:textStyle="bold" />
@@ -287,7 +303,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:width="100dp"
+                    android:width="80dp"
                     android:background="@color/white"
                     android:ems="10"
                     android:inputType="textPersonName" />
@@ -298,6 +314,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_weight="1"
+                    android:height="20dp"
                     android:text="Ciudad"
                     android:textColor="#474242"
                     android:textStyle="bold" />
@@ -307,7 +324,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:width="100dp"
+                    android:width="80dp"
                     android:background="@color/white"
                     android:ems="10"
                     android:inputType="textPersonName" />
@@ -328,6 +345,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:height="20dp"
                     android:text="Email"
                     android:textColor="#474242"
                     android:textStyle="bold" />
@@ -337,6 +355,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:width="270dp"
                     android:background="@color/white"
                     android:ems="10"
                     android:inputType="textPersonName" />
@@ -353,10 +372,10 @@
 
                 <TextView
                     android:id="@+id/DireccionPersona"
-                    android:layout_width="128dp"
+                    android:layout_width="144dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:width="50dp"
+                    android:height="20dp"
                     android:text="Dirección Residencia"
                     android:textColor="#474242"
                     android:textStyle="bold" />
@@ -366,6 +385,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:width="180dp"
                     android:height="20dp"
                     android:background="@color/white"
                     android:ems="10"
@@ -386,7 +406,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Teléfono de Contacto"
+                    android:height="20dp"
+                    android:text="Teléfono Contacto"
                     android:textColor="#474242"
                     android:textStyle="bold" />
 
@@ -395,6 +416,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:width="180dp"
                     android:background="@color/white"
                     android:ems="10"
                     android:inputType="textPersonName" />
@@ -410,13 +432,20 @@
                     android:id="@+id/BtnRegistrarPersona"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="120dp"
+                    android:layout_marginLeft="110dp"
                     android:layout_marginTop="40dp"
-                    android:layout_marginRight="120dp"
+                    android:layout_marginRight="110dp"
+                    android:layout_marginBottom="30dp"
                     android:layout_weight="1"
                     android:background="@color/gray"
+                    android:backgroundTint="@color/gray"
+                    android:shadowColor="@color/gray"
                     android:text="REGISTRAR"
-                    android:textStyle="bold" />
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:cornerRadius="10dp" />
             </LinearLayout>
 
         </LinearLayout>
