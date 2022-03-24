@@ -4,6 +4,302 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#09A193"
     tools:context=".DetalleProducto">
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardDetalleProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="141dp"
+        app:cardBackgroundColor="#55FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TituloDetalleProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INFORMACIÓN PRODUCTO"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="10dp"
+            android:background="#C2F6F1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/DatosClienteDetalleProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DATOS DEL CLIENTE"
+                    android:textColor="#09A193"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/NombreClienteDetalleProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nombre Completo:"
+                    android:textColor="#474242"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/TxtNombreClienteDetalleProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TipoDocClienteDetalleProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tipo Documento:"
+                    android:textColor="#474242"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/TxtTipoDocDetalleProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="35dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/NumeroDetalleProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Número:"
+                    android:textColor="#474242"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/TxtNumeroDetalleProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="120dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TelefonoClienteDetalleProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="20dp"
+                    android:text="Telefono:"
+                    android:textColor="#474242"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/TxtTelefonoClienteDetalleProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginRight="10dp"
+            android:background="#C2F6F1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/DatosProductoDetalleProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DATOS DEL PRODUCTO"
+                    android:textColor="#09A193"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/IdProductoDetalleProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="45dp"
+                    android:text="Id del Producto:"
+                    android:textColor="#474242"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/TxtIdProductoDetalleProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="200dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/CantidadProductoDetalleProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="130dp"
+                    android:text="Cantidad:"
+                    android:textColor="#474242"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/TxtCantidadProductoDetalleProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="180dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/PrecioUnitarioDetalleProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="45dp"
+                    android:text="Precio Unitario:"
+                    android:textColor="#474242"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/TxtPrecioUnitarioDetalleProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ImporteTotalDetalleProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="30dp"
+                    android:text="Importe Total:"
+                    android:textColor="#474242"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/TxtImporteTotalDetalleProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
