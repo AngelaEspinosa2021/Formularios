@@ -167,7 +167,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="300dp"
             android:layout_marginRight="10dp"
@@ -195,7 +195,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="14dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
@@ -300,6 +300,26 @@
                     android:ems="10"
                     android:inputType="textPersonName" />
             </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="550dp"
+            android:layout_marginRight="150dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/BtnSalirDetalleProducto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_weight="1"
+                android:text="SALIR"
+                android:textColor="#FAF6F6"
+                android:textSize="20dp"
+                android:textStyle="bold" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
