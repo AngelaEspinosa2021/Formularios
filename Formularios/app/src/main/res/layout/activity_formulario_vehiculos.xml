@@ -554,7 +554,7 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/CambinaSimpleFormVehiculo"
+                            android:id="@+id/CabinaSimpleFormVehiculo"
                             android:layout_width="wrap_content"
                             android:layout_height="32dp"
                             android:layout_weight="1"
