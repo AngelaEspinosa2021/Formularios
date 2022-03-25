@@ -61,6 +61,7 @@ public class FormularioVehiculos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formulario_vehiculos);
+        setContentAtributes();
     }
 
     public void setContentAtributes(){

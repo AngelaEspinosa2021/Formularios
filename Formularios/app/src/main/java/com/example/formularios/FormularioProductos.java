@@ -3,6 +3,7 @@ package com.example.formularios;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -27,6 +28,7 @@ public class FormularioProductos extends AppCompatActivity {
     public EditText TxtCantidadProducto;
     public EditText TxtPrecioUProducto;
     public EditText TxtImportTProducto;
+    public Button BtnRegistrarProducto;
 
 
     @Override
@@ -56,5 +58,6 @@ public class FormularioProductos extends AppCompatActivity {
         TxtCantidadProducto = findViewById(R.id.TxtCantidadProducto);
         TxtPrecioUProducto = findViewById(R.id.TxtPrecioUProducto);
         TxtImportTProducto = findViewById(R.id.TxtImportTProducto);
+        BtnRegistrarProducto = findViewById(R.id.BtnRegistrarProducto);
     };
 }
