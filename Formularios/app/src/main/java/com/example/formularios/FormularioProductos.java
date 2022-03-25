@@ -28,6 +28,7 @@ public class FormularioProductos extends AppCompatActivity {
     public EditText TxtPrecioUProducto;
     public EditText TxtImportTProducto;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

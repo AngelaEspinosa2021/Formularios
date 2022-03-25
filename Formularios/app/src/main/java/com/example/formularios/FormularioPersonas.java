@@ -3,14 +3,16 @@ package com.example.formularios;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-public class FormularioPersonas extends AppCompatActivity {
+public class FormularioPersonas extends AppCompatActivity implements View.OnClickListener {
 
     public CardView CardRegistroPersona;
     public TextView TituloPersonas;
@@ -44,10 +46,17 @@ public class FormularioPersonas extends AppCompatActivity {
     public Button BtnRegistrarPersona;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formulario_personas);
         setContentAtributes();
+        setContentViewEvents();
+    }
+
+    private void setContentViewEvents()
+    {
+        BtnRegistrarPersona.setOnClickListener(this);
     }
 
     private void setContentAtributes(){
@@ -82,8 +91,22 @@ public class FormularioPersonas extends AppCompatActivity {
         TxtTelefonoPersona = findViewById(R.id.TxtTelefonoPersona);
         BtnRegistrarPersona = findViewById(R.id.BtnRegistrarPersona);
 
+    }
 
+    @Override
+    public void onClick(View view)
+    {
+        switch(view.getId())
+        {
+            case R.id.BtnRegistrarPersona:
+                goToDetallePersonaAction();
+                break;
+        }
+    }
 
-
+    private void goToDetallePersonaAction()
+    {
+        Intent intent = new Intent(this,DetallePersona.class);
+        startActivity(intent);
     }
 }
