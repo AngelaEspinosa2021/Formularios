@@ -106,7 +106,7 @@ public class FormularioPersonas extends AppCompatActivity implements View.OnClic
 
     private void goToDetallePersonaAction()
     {
-        Intent intent = new Intent(this,DetallePersona.class);
+        Intent intent = new Intent(FormularioPersonas.this,DetallePersona.class);
         startActivity(intent);
     }
 }
