@@ -89,7 +89,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName"
+                    android:id="@+id/TxtMarcaFormVehiculo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -110,7 +110,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName2"
+                    android:id="@+id/TxtAñoModeloFormVehiculo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -139,7 +139,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName3"
+                    android:id="@+id/TxtModeloFormVehiculo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -160,7 +160,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName4"
+                    android:id="@+id/TxtPaisOrigenFormVehiculo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -190,7 +190,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName5"
+                    android:id="@+id/TxtClaseVehiculoFormVehiculo"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -211,7 +211,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName6"
+                    android:id="@+id/TxtTipoVehiculoFormVehiculo"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -240,7 +240,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName7"
+                    android:id="@+id/TxtPesoFormVehiculo"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginRight="180dp"
@@ -347,7 +347,7 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/editTextTextPersonName8"
+                            android:id="@+id/TxtNumeroDocPropietarioFormVehiculo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="40dp"
@@ -382,7 +382,7 @@
                         android:orientation="horizontal">
 
                         <EditText
-                            android:id="@+id/editTextTextPersonName10"
+                            android:id="@+id/TxtRazonSocialPropietarioFormVehiculo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -417,6 +417,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="DETALLE DEL MODELO"
+                    android:textAlignment="viewStart"
                     android:textColor="#09A193"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -491,7 +492,7 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/editTextTextPersonName11"
+                            android:id="@+id/TxtCilindrajeFormVehiculo"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -518,7 +519,7 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/editTextTextPersonName12"
+                            android:id="@+id/TxtNumPuertasFormVehiculo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
