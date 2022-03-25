@@ -254,10 +254,10 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="280dp"
-            android:layout_marginRight="0dp"
+            android:layout_marginTop="275dp"
+            android:layout_marginRight="10dp"
             android:background="#C2F6F1"
             android:orientation="vertical">
 
@@ -281,7 +281,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="10dp"
@@ -352,7 +352,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginRight="40dp"
                             android:layout_weight="1"
-                            android:width="170dp"
+                            android:width="160dp"
                             android:background="@color/white"
                             android:ems="10"
                             android:inputType="textPersonName" />
@@ -394,5 +394,316 @@
 
             </LinearLayout>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="443dp"
+            android:layout_marginRight="10dp"
+            android:background="#C2F6F1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/DetalleModeloFormVehiculo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DETALLE DEL MODELO"
+                    android:textColor="#09A193"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/AireAcondicionadoFormVehiculo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Aire Acondicionado"
+                            android:textAlignment="center"
+                            android:textColor="#474242"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="31dp"
+                        android:layout_marginLeft="10dp">
+
+                        <RadioButton
+                            android:id="@+id/SiFormVehiculo"
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:text="SI"
+                            android:textAlignment="center" />
+
+                        <RadioButton
+                            android:id="@+id/NoFormVehiculo"
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:text="NO"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/CilindrajeFormVehiculo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:width="100dp"
+                            android:text="Cilindraje (cm cubicos)"
+                            android:textColor="#474242"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:width="100dp"
+                            android:background="@color/white"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/NumPuertasFormVehiculo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="N° de Puertas"
+                            android:textColor="#474242"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:width="50dp"
+                            android:background="@color/white"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/NumCabinasFormVehiculo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="N° de Cabinas"
+                            android:textAlignment="center"
+                            android:textColor="#474242"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/CambinaSimpleFormVehiculo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_weight="1"
+                            android:text="Simple" />
+
+                        <RadioButton
+                            android:id="@+id/CabinaDobleFormVehiculo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_weight="1"
+                            android:text="Doble" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/TipoCombustibleFormVehiculo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tipo de Combustible"
+                            android:textAlignment="center"
+                            android:textColor="#474242"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="64dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/GasolinaFormVehiculo"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:text="Gasolina"
+                                android:textSize="12sp" />
+
+                            <RadioButton
+                                android:id="@+id/DieselFormVehiculo"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:text="Diesel"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/HibridoFormVehiculo"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:text="Hibrido"
+                                android:textSize="12sp" />
+
+                            <RadioButton
+                                android:id="@+id/ElectircoFormVehiculo"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:text="Electrico"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/TransmisiónFormVehiculo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Transmisión"
+                            android:textAlignment="center"
+                            android:textColor="#474242"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/TransManualFormVehiculo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_weight="1"
+                            android:text="Manual"
+                            android:textSize="11sp" />
+
+                        <RadioButton
+                            android:id="@+id/TransAutoFormVehiculo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_weight="1"
+                            android:text="Automatica"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="660dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/BtnRegistrarFormVehiculo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="REGISTRAR"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
     </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
