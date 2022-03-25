@@ -34,10 +34,6 @@ public class DetallePersona extends AppCompatActivity {
     public EditText TxtTelefonoDetalleP;
     public Button BtnSalirDetallePersona;
 
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,12 +66,6 @@ public class DetallePersona extends AppCompatActivity {
         TelefonoDetalleP = findViewById(R.id.TelefonoDetalleP);
         TxtTelefonoDetalleP = findViewById(R.id.TxtTelefonoDetalleP);
         BtnSalirDetallePersona = findViewById(R.id.BtnSalirDetallePersona);
-
-
-
-
-
-
 
     }
 }
